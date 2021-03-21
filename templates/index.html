@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/styleindex.css">
+
+
+</head>
+<body>
+
+<img class="sticky" src="/static/pic.jpeg">
+
+
+<div class="container">
+
+<h1>Check all the symptoms that apply to you:</h1>
+
+<form post="/symptoms" >
+  <label class="custom-control-label" >itching</label>
+  <input type="checkbox"  name="itching" value="1" class="custom-control-input" > <br>
+
+  <label class="custom-control-label" >skin_rash</label>
+  <input type="checkbox" name="skin_rash" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >nodal_skin_eruptions</label>
+  <input type="checkbox" name="nodal_skin_eruptions" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >continuous_sneezing</label>
+  <input type="checkbox" name="continuous_sneezing" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >shivering</label>
+  <input type="checkbox" name="shivering" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >chills</label>
+  <input type="checkbox" name="chills" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >acidity</label>
+  <input type="checkbox" name="acidity" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >ulcers_on_tongue</label>
+  <input type="checkbox" name="ulcers_on_tongue" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >muscle_wasting</label>
+  <input type="checkbox" name="muscle_wasting" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >vomiting</label>
+  <input type="checkbox" name="vomiting" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >spotting_</label>
+  <input type="checkbox" name="spotting_" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >urination</label>
+  <input type="checkbox" name="urination" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >fatigue</label>
+  <input type="checkbox" name="fatigue" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >weight_gain</label>
+  <input type="checkbox" name="weight_gain" value="1" class="custom-control-input" > <br>
+
+  <label class="custom-control-label" >cold_hands_and_feets</label>
+  <input type="checkbox" name="cold_hands_and_feets" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >mood_swings</label>
+  <input type="checkbox" name="mood_swings" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >weight_loss</label>
+  <input type="checkbox" name="weight_loss" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >restlessness</label>
+  <input type="checkbox" name="restlessness" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >lethargy</label>
+  <input type="checkbox" name="lethargy" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >patches_in_throat</label>
+  <input type="checkbox" name="patches_in_throat" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >cough</label>
+  <input type="checkbox" name="cough" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >sunken_eyes</label>
+  <input type="checkbox" name="sunken_eyes" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >breathlessness</label>
+  <input type="checkbox" name="breathlessness" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >breathlessness</label>
+  <input type="checkbox" name="breathlessness" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >headache</label>
+  <input type="checkbox" name="headache" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >yellowish_skin</label>
+  <input type="checkbox" name="yellowish_skin" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >dark_urine</label>
+  <input type="checkbox" name="dark_urine" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >nausea</label>
+  <input type="checkbox" name="nausea" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >loss_of_appetite</label>
+  <input type="checkbox" name="loss_of_appetite" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >pain_behind_the_eyes</label>
+  <input type="checkbox" name="pain_behind_the_eyes" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >back_pain</label>
+  <input type="checkbox" name="back_pain" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >constipation</label>
+  <input type="checkbox" name="constipation" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >abdominal_pain</label>
+  <input type="checkbox" name="abdominal_pain" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >diarrhoea</label>
+  <input type="checkbox" name="diarrhoea" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >mild_fever</label>
+  <input type="checkbox" name="mild_fever" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >yellowing_of_eyes</label>
+  <input type="checkbox" name="yellowing_of_eyes" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >acute_liver_failure</label>
+  <input type="checkbox" name="acute_liver_failure" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >fluid_overload</label>
+  <input type="checkbox" name="fluid_overload" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >swelling_of_stomach</label>
+  <input type="checkbox" name="swelling_of_stomach" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >swelled_lymph_nodes</label>
+  <input type="checkbox" name="swelled_lymph_nodes" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >malaise</label>
+  <input type="checkbox" name="malaise" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >blurred_and_distorted_vision</label>
+  <input type="checkbox" name="blurred_and_distorted_vision" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >phlegm</label>
+  <input type="checkbox" name="phlegm" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >throat_irritation</label>
+  <input type="checkbox" name="throat_irritation" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >redness_of_eyes</label>
+  <input type="checkbox" name="redness_of_eyes" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >sinus_pressure</label>
+  <input type="checkbox" name="sinus_pressure" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >runny_nose</label>
+  <input type="checkbox" name="runny_nose" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >congestion</label>
+  <input type="checkbox" name="congestion" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >chest_pain</label>
+  <input type="checkbox" name="chest_pain" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >weakness_in_limbs</label>
+  <input type="checkbox"  name="weakness_in_limbs" value="1"  name="itching" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >fast_heart_rate</label>
+  <input type="checkbox"  name="fast_heart_rate" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >pain_during_bowel_movements</label>
+  <input type="checkbox"  name="pain_during_bowel_movements" value="1" class="custom-control-input" ><br>
+
+   <label class="custom-control-label" >pain_in_anal_region</label>
+  <input type="checkbox"  name="pain_in_anal_region" value="1" class="custom-control-input" ><br>
+
+     <label class="custom-control-label" >bloody_stool</label>
+  <input type="checkbox"  name="bloody_stool" value="1" class="custom-control-input" ><br>
+
+      <label class="custom-control-label" >irritation_in_anus</label>
+  <input type="checkbox"  name="irritation_in_anus" value="1" class="custom-control-input" ><br>
+
+       <label class="custom-control-label" >neck_pain</label>
+  <input type="checkbox"  name="neck_pain" value="1" class="custom-control-input" ><br>
+
+     <label class="custom-control-label" >dizziness</label>
+  <input type="checkbox"  name="dizziness" value="1" class="custom-control-input" >
+
+     <label class="custom-control-label" >cramps</label>
+  <input type="checkbox"  name="cramps" value="1" class="custom-control-input" ><br>
+
+     <label class="custom-control-label" >bruising</label>
+  <input type="checkbox"  name="bruising" value="1" class="custom-control-input" ><br>
+
+     <label class="custom-control-label" >obesity</label>
+  <input type="checkbox"  name="obesity" value="1" class="custom-control-input" ><br>
+
+     <label class="custom-control-label" >swollen_legs</label>
+  <input type="checkbox"  name="swollen_legs" value="1" class="custom-control-input" ><br>
+
+     <label class="custom-control-label" >swollen_blood_vessels</label>
+  <input type="checkbox"  name="swollen_blood_vessels" value="1" class="custom-control-input" ><br>
+
+     <label class="custom-control-label" >puffy_face_and_eyes</label>
+  <input type="checkbox"  name="puffy_face_and_eyes" value="1" class="custom-control-input" ><br>
+
+     <label class="custom-control-label" >enlarged_thyroid</label>
+  <input type="checkbox"  name="enlarged_thyroid" value="1" class="custom-control-input" ><br>
+
+     <label class="custom-control-label" >brittle_nails</label>
+  <input type="checkbox"  name="brittle_nails" value="1" class="custom-control-input" ><br>
+
+      <label class="custom-control-label" >swollen_extremeties</label>
+  <input type="checkbox"  name="swollen_extremeties" value="1" class="custom-control-input" ><br>
+
+    <label class="custom-control-label" >excessive_hunger</label>
+  <input type="checkbox"  name="excessive_hunger" value="1" class="custom-control-input" ><br>
+
+    <label class="custom-control-label" >extra_marital_contacts</label>
+  <input type="checkbox"  name="extra_marital_contacts" value="1" class="custom-control-input" ><br>
+
+    <label class="custom-control-label" >drying_and_tingling_lips</label>
+  <input type="checkbox"  name="drying_and_tingling_lips" value="1" class="custom-control-input" ><br>
+
+    <label class="custom-control-label" >slurred_speech</label>
+  <input type="checkbox"  name="slurred_speech" value="1" class="custom-control-input" ><br>
+
+    <label class="custom-control-label" >knee_pain</label>
+  <input type="checkbox"  name="knee_pain" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >hip_joint_pain</label>
+  <input type="checkbox"  name="hip_joint_pain" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >muscle_weakness</label>
+  <input type="checkbox"  name="muscle_weakness" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >stiff_neck</label>
+  <input type="checkbox"  name="stiff_neck" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >swelling_joints</label>
+  <input type="checkbox"  name="swelling_joints" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >movement_stiffness</label>
+  <input type="checkbox"  name="movement_stiffness" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >spinning_movements</label>
+  <input type="checkbox"  name="spinning_movements" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >loss_of_balance</label>
+  <input type="checkbox"  name="loss_of_balance" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >unsteadiness</label>
+  <input type="checkbox"  name="unsteadiness" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >weakness_of_one_body_side</label>
+  <input type="checkbox"  name="weakness_of_one_body_side" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >loss_of_smell</label>
+  <input type="checkbox"  name="loss_of_smell" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >unsteadiness</label>
+  <input type="checkbox"  name="unsteadiness" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >weakness_of_one_body_side</label>
+  <input type="checkbox"  name="weakness_of_one_body_side" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >loss_of_smell</label>
+  <input type="checkbox"  name="loss_of_smell" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >bladder_discomfort</label>
+  <input type="checkbox"  name="bladder_discomfort" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >foul_smell_of urine</label>
+  <input type="checkbox"  name="foul_smell_of urine" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >continuous_feel_of_urine</label>
+  <input type="checkbox"  name="continuous_feel_of_urine" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >passage_of_gases</label>
+  <input type="checkbox"  name="passage_of_gases" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >internal_itching</label>
+  <input type="checkbox"  name="internal_itching" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >toxic_look_(typhos)</label>
+  <input type="checkbox"  name="toxic_look_(typhos)" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >depression</label>
+  <input type="checkbox"  name="depression" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >irritability</label>
+  <input type="checkbox"  name="irritability" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >muscle_pain</label>
+  <input type="checkbox"  name="muscle_pain" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >altered_sensorium</label>
+  <input type="checkbox"  name="altered_sensorium" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >red_spots_over_body</label>
+  <input type="checkbox"  name="red_spots_over_body" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >belly_pain</label>
+  <input type="checkbox"  name="belly_pain" value="1" class="custom-control-input" ><br>
+
+  <label class="custom-control-label" >abnormal_menstruation</label>
+  <input type="checkbox"  name="abnormal_menstruation" value="1" class="custom-control-input" ><br>
+
+    <label class="custom-control-label" >dischromic _patches</label>
+  <input type="checkbox"  name="dischromic _patches" value="1" class="custom-control-input" ><br>
+
+    <label class="custom-control-label" >watering_from_eyes</label>
+  <input type="checkbox"  name="watering_from_eyes" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >increased_appetite</label>
+<input type="checkbox" name="increased_appetite" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >polyuria</label>
+<input type="checkbox" name="polyuria" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >family_history</label>
+<input type="checkbox" name="family_history" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >mucoid_sputum</label>
+ <input type="checkbox" name="mucoid_sputum" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >rusty_sputum</label>
+ <input type="checkbox" name="rusty_sputum" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >lack_of_concentration</label>
+<input type="checkbox" name="lack_of_concentration" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >visual_disturbances</label>
+ <input type="checkbox" name="visual_disturbances" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >receiving_blood_transfusion</label>
+ <input type="checkbox" name="receiving_blood_transfusion" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >receiving_unsterile_injections</label>
+ <input type="checkbox" name="receiving_unsterile_injections" value="1" class="custom-control-input"><br>
+
+
+<label class="custom-control-label" >distention_of_abdomen</label>
+ <input type="checkbox" name="distention_of_abdomen" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >stomach_bleeding</label>
+ <input type="checkbox" name="stomach_bleeding" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >distention_of_abdomen</label>
+ <input type="checkbox" name="distention_of_abdomen" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >history_of_alcohol_consumption</label>
+ <input type="checkbox" name="history_of_alcohol_consumption" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >fluid_overload</label>
+ <input type="checkbox" name="fluid_overload" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >blood_in_sputum</label>
+ <input type="checkbox" name="blood_in_sputum" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >prominent_veins_on_calf</label>
+ <input type="checkbox" name="prominent_veins_on_calf" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >palpitations</label>
+ <input type="checkbox" name="palpitations" value="1" class="custom-control-input" ><br>
+
+<label class="custom-control-label" >painful_walking</label>
+ <input type="checkbox" name="painful_walking" value="1" class="custom-control-input" ><br>
+
+
+<label class="custom-control-label" >pus_filled_pimples</label>
+ <input type="checkbox" name="pus_filled_pimples" value="1" class="custom-control-input">
+
+
+    <label class="custom-control-label" >blackheads</label>
+  <input type="checkbox"  name="blackheads" value="1" class="custom-control-input" ><br>
+
+    <label class="custom-control-label" >scurring</label>
+  <input type="checkbox"  name="scurring" value="1" class="custom-control-input" ><br>
+
+    <label class="custom-control-label" >skin_peeling</label>
+  <input type="checkbox"  name="skin_peeling" value="1" class="custom-control-input" ><br>
+
+    <label class="custom-control-label" >silver_like_dusting</label>
+  <input type="checkbox"  name="silver_like_dusting" value="1" class="custom-control-input" >
+
+    <label class="custom-control-label" >small_dents_in_nails</label>
+  <input type="checkbox"  name="small_dents_in_nails" value="1" class="custom-control-input" ><br>
+
+    <label class="custom-control-label" >inflammatory_nails</label>
+  <input type="checkbox"  name="inflammatory_nails" value="1" class="custom-control-input" ><br>
+
+    <label class="custom-control-label" >blister</label>
+  <input type="checkbox"  name="blister" value="1" class="custom-control-input" ><br>
+
+    <label class="custom-control-label" >red_sore_around_nose</label>
+  <input type="checkbox"  name="red_sore_around_nose" value="1" class="custom-control-input" ><br>
+
+      <label class="custom-control-label" >yellow_crust_ooze</label>
+  <input type="checkbox"  name="yellow_crust_ooze" value="1" class="custom-control-input" ><br>
+
+
+
+  <input type="submit" name="submit" id="send"/>
+
+</form>
+
+</div>
+
+<div>
+Results <p id="result"></p>
+</div>
+
+</div>
+<script type="text/javascript">
+$("#send").click(function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "/test",
+        contentType: "application/json; charset=UTF-8",
+        data:JSON.stringify( $("form").serializeArray()),
+        success: function(result) {
+          console.log(result)
+          url = "result/"+result["prediction"]+"&"+result["disease"];
+            // alert('ok');
+              // var str =JSON.stringify( $("form").serializeArray() );
+              window.location.replace(url);
+
+             // console.log("data",str);
+               // $('#result').html(result);
+             // console.log("success",result);
+
+        },
+        error: function(result) {
+            alert('error');
+        }
+    });
+});
+
+
+
+</script>
+</body>
+</html>

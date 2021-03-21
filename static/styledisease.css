@@ -1,0 +1,27 @@
+.container
+{
+	float: right;
+	width: 35%;
+  	font-size: 15px;
+  	padding-left: 20px;
+	margin-top: 180px;
+	margin-right: 250px;
+}
+
+.pic
+{
+float: left;
+position: absolute;
+padding-top:-50px; 
+margin-top: -20px;
+}
+
+h1
+{
+	float: right;
+}
+
+body {
+	background: #edf2fb;
+	font-family: 'Roboto', sans-serif;
+}

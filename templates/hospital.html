@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<h1>Welcome To Hospital Database</h1>
+<body>
+  <form action = "/upd/hospital", method = "post">
+    <div class="container">
+    <label for = "database">Select One Of The Following</label><br>
+    <select for = "database" name="comp_select">
+    <option value="insert">Insert</option>
+    <option value="delete">Delete</option>
+    <option value="update">Update</option>
+  </select>
+    </div>
+    <div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+        </div>
+        <h2>For Insert and Delete</h2>
+            <div class="form-group">
+    			<div class="row">
+
+    				<div class="col">
+    					<label for = "h_id">H_ID</label><br>
+    					<input type="text" class="form-control" name="h_id" placeholder="First Name" required="required"></div>
+    				<div class="col">
+    					<label for = "name">Name</label><br>
+    					<input type="text" class="form-control" name="name" placeholder="Last Name"></div>
+    			</div>
+            </div>
+            <div class="form-group">
+            	<label for = "city">City</label><br>
+            	<input type="text" class="form-control" name="city" placeholder="City">
+            </div>
+            <div class="form-group">
+            	<label for = "expense">Avg_expense</label><br>
+            	<input type="text" class="form-control" name="expense" placeholder="Age">
+            </div>
+             <h3>For Updation</h3>
+    				 <div class="form-group">
+             	<label for = "h_id">H_ID</label><br>
+             	<input type="text" class="form-control" name="h_id2" placeholder="h_id">
+             </div>
+    				 <h4>Which attribute You want to update?</h4>
+    				 <select for = "database" name="comp2_select">
+    				 <option value="city2">City</option>
+    				 <option value="exp">Avg_expense</option>
+    				 <option value="nm">Name</option>
+    			 </select>
+    			 <div class="form-group">
+    							 <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+    					 </div>
+    			 <div class="form-group">
+    				<label for = "attr">Enter the new attribute</label><br>
+    				<input type="text" class="form-control" name="attr">
+    			 </div>
+
+
+    		<div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+            </div>
+    </form>
+</body>
+</html>
